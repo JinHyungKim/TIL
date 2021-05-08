@@ -1,0 +1,32 @@
+class Main {
+  public static void main(String[] args) {
+		int i=2;
+		while(i<100){
+			if(primeNumberTest(i)){
+				System.out.println(i);
+			}
+			i++;
+		}
+	}
+
+	public static boolean primeNumberTest(int num){
+		switch(num){
+			case(2):
+			case(3):
+			case(5):
+			case(7):
+			case(11):
+			case(13):
+				return true;	
+		}
+			
+		if((num%2!=0) && (num%3!=0)){
+			if((num%5!=0) && (num%7!=0)){
+				if((num%11!=0) && (num%13!=0)){
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+}	
