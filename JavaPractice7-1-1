@@ -1,0 +1,70 @@
+class Triangle{
+	int triangleNumber;
+	double height;
+	double bottom;
+
+	public Triangle(int num){
+		triangleNumber = num;
+	}
+	
+	public void setHeight(double h){
+		height = h;
+	}
+	public void setBottom(double b){
+		bottom = b;
+	}
+	public double checkArea(){
+		return height*bottom*0.5;
+	}
+}
+
+class Main{
+	public static void main(String[] args){
+		Triangle t1 = new Triangle(1);
+		Triangle t2 = new Triangle(2);
+		
+		t1.setHeight(5);
+		t1.setBottom(10);
+		System.out.println(t1.triangleNumber + "번 삼각형의 넓이: " + t1.checkArea());
+
+		t2.setHeight(10);
+		t2.setBottom(10);
+		System.out.println(t2.triangleNumber + "번 삼각형의 넓이: " + t2.checkArea());
+	}
+}
+
+/*
+class Triangle {
+    double bottom;
+    double height;
+    
+    public Triangle(double bt, double hg) {
+        bottom = bt;
+        height = hg;
+    }
+      
+    public void setBottom(double bt) {
+        bottom = bt;
+    }
+    
+    public void setHeight(double hg) {
+        height = hg;
+    }
+    
+    public double getArea() {
+        return bottom * height / 2;
+    }
+}
+
+class UseTriangle {
+    public static void main(String[] args) {
+        Triangle tr = new Triangle(10.2, 17.3);
+        System.out.println("삼각형의 넓이: " + tr.getArea());
+        
+        tr.setBottom(7.5);
+        tr.setHeight(9.2);
+        System.out.println("삼각형의 넓이: " + tr.getArea());	
+    }
+}
+
+*/
