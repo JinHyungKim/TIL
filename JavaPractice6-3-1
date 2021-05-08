@@ -1,0 +1,29 @@
+class Main {
+  public static void main(String[] args) {
+		int n = 8;
+		System.out.println(toThePowerOfTwo(n));
+	}
+
+	public static int toThePowerOfTwo(int num){
+		if(num == 1)
+			return 2;
+		else
+			return 2*toThePowerOfTwo(num-1);
+	}
+}	
+
+/*
+class ReculsivePowerOfTwo {
+    public static void main(String[] args) {
+        System.out.println("2의 5승 : " + powerOfTwo(5));
+        System.out.println("2의 7승 : " + powerOfTwo(7));
+    }
+    
+    public static int powerOfTwo(int n) {
+        if(n == 0)
+            return 1;
+        
+        return 2 * powerOfTwo(n - 1);
+    }
+}
+*/
