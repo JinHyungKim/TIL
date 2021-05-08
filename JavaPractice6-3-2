@@ -1,0 +1,37 @@
+class Main {
+  public static void main(String[] args) {
+		int num = 123456;
+		decToBin(num);
+	}
+
+	public static void decToBin(int dec){
+		if(dec==1){
+			System.out.print(dec);
+			return;
+		}
+		else{
+			decToBin(dec/2);
+			System.out.print(dec%2);
+		}
+	}
+}	
+
+/*
+class Main {
+    public static void main(String[] args) {
+        toBinary(10);
+    }
+    
+    public static int toBinary(int decimal) {
+        if(decimal > 0) {
+            int bin = decimal % 2;
+            decimal /= 2;
+            
+            toBinary(decimal);
+            System.out.print(bin);
+        }
+        
+        return 0;
+    }
+}
+*/
