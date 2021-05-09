@@ -1,0 +1,19 @@
+class StringClass{
+	public static void main(String args[]){
+		String str1 = new String("990925-1012999");
+		String str2 = str1.substring(0, 6);
+		String str3 = str1.substring(7, 14);
+		String str4 = " ";
+		System.out.println((str2.concat(str4).concat(str3)));
+	}
+}
+
+/*
+class RemoveBar {
+    public static void main(String[] args) {
+        String s1 = "990925-1012999";
+        String s2 = s1.substring(0, 6) + ' ' + s1.substring(7);
+        System.out.println(s2);
+    }
+}
+*/
